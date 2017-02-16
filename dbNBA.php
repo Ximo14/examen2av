@@ -24,7 +24,7 @@ class dbNBA
     }
     // FIN CONEXION
 
-    // FUNCION mostrarEquipos
+    // FUNCION mostrarEquipos muestra todos los equipos
     public function mostrarEquipos()
     {
       if ($this->conexion->connect_errno){
@@ -34,7 +34,7 @@ class dbNBA
       }
     }
 
-    // FUNCION mostrarConfEste
+    // FUNCION mostrarConfEste que muestra los equipos de la conferencia Este
     public function mostrarConfEste()
     {
       if ($this->conexion->connect_errno){
@@ -44,7 +44,7 @@ class dbNBA
       }
     }
 
-    // FUNCION mostrarTemporada
+    // FUNCION mostrarTemporada que los partidos por temporada
     public function mostrarTemporada($temporada)
     {
       if ($this->conexion->connect_errno) {
